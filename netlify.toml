@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"  # Command to build your project
-  publish = "build"          # Directory to deploy (output directory after build)
+  publish = "dist"          # Directory to deploy (output directory after build)
 
 [[redirects]] 
   from = "/*"
