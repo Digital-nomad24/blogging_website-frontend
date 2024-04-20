@@ -1,0 +1,1 @@
+import{j as s}from"./index-DX5dQwiC.js";function d({children:r}){return s.jsx("div",{className:"p-4",children:r})}function e({children:r}){return s.jsx("div",{className:"bg-white shadow-md rounded-md overflow-hidden",children:r})}export{e as C,d as a};

@@ -1,0 +1,1 @@
+import{j as e,L as i}from"./index-DX5dQwiC.js";function o({label:r,buttonText:s,to:n}){return e.jsxs("div",{className:"py-2 text-sm flex justify-center",children:[e.jsx("div",{children:r}),e.jsx(i,{className:"pointer underline pl-1 cursor-pointer",to:n,children:s})]})}export{o as B};
