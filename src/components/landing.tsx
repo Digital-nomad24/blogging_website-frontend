@@ -92,7 +92,7 @@ export default function Landing(){
                         alt="Cover image"
                         className="mx-auto aspect-video overflow-hidden rounded-t-lg object-cover object-center"
                         height="225"
-                        src="/placeholder.svg"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM4WOvo4pTa48z54EIYWJMHLSWnMQKYqPUKmr2ae8YBw&s"
                         width="400"
                       />
                       <CardContent >
@@ -109,11 +109,11 @@ export default function Landing(){
                         alt="Cover image"
                         className="mx-auto aspect-video overflow-hidden rounded-t-lg object-cover object-center"
                         height="225"
-                        src="/placeholder.svg"
+                        src="https://s.studiobinder.com/wp-content/uploads/2021/02/Juxtaposing-two-subjects.jpg"
                         width="400"
                       />
                       <CardContent >
-                        <h3 className="text-base font-bold">The Art of CSS Frameworks</h3>
+                        <h3 className="text-base font-bold">The Art of Web development by Nakshatra</h3>
                         <p className="text-sm text-gray-500 dark:text-gray-400">
                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta, ex exercitationem quas natus tempore dolorem nihil quaerat voluptate corporis molestiae dolorum nemo quasi voluptatibus, cupiditate veritatis repellendus nesciunt. Vitae?
                         </p>
@@ -126,11 +126,11 @@ export default function Landing(){
                         alt="Cover image"
                         className="mx-auto aspect-video overflow-hidden rounded-t-lg object-cover object-center"
                         height="225"
-                        src="/placeholder.svg"
+                        src="https://i.pinimg.com/736x/0b/fb/7a/0bfb7a0186b1e2c89dd7bbd4d016a9ce.jpg"
                         width="400"
                       />
                       <CardContent >
-                        <h3 className="text-base font-bold">The Power of Serverless</h3>
+                        <h3 className="text-base font-bold">The Power of Technology</h3>
                         <p className="text-sm text-gray-500 dark:text-gray-400">
                           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe natus voluptatibus reiciendis ipsum, nam nisi eveniet impedit expedita dolorum quia aut fuga amet ut voluptatum, at sapiente magnam. Deserunt, pariatur.
                         </p>

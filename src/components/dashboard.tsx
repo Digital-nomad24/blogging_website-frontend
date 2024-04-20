@@ -70,6 +70,7 @@ axios.request(config)
       <div className="flex items-center gap-4">
         <Button label={"Logout"} onClick={()=>{
             navigate('/signin')
+            localStorage.clear()
         }}>
         </Button>
       </div>
