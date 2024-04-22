@@ -17,7 +17,7 @@ export default function Landing(){
 let config = {
 method: 'get',
 maxBodyLength: Infinity,
-url: 'http://127.0.0.1:8787/api/v1/user/bulk',
+url: 'https://backend.nakshvashisth.workers.dev/api/v1/user/bulk',
 data : data
 };
 
