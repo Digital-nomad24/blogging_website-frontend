@@ -1,12 +1,40 @@
-import CardContent from "../css-components/CardContent"
 import { Link } from "react-router-dom"
 import { Button } from "../css-components/Buttons"
 import { useNavigate } from "react-router-dom"
-import { Card } from "../css-components/Card"
 import axios from "axios"
+import { useEffect } from "react"
+import { CardRenderMain } from "./CardRenderMain"
+import {  useRecoilState } from "recoil"
+import { blogatom } from "./atoms"
 export default function Landing(){
     const navigate=useNavigate()
     const token=localStorage.getItem('token')
+    const [posts,setPosts]=useRecoilState(blogatom)
+    useEffect(() => {
+      const fetchData = async () => {
+        try {
+        let data = '';
+let config = {
+method: 'get',
+maxBodyLength: Infinity,
+url: 'http://127.0.0.1:8787/api/v1/user/bulk',
+data : data
+};
+
+axios.request(config)
+.then((response) => {
+  console.log(response.data.posts)
+setPosts(response.data.posts)
+})
+.catch((error) => {
+console.log(error);
+});
+        } catch (error) {
+          console.error("Error fetching balance:", error);
+        }
+      };
+      fetchData();
+    }, []);
     return  (
         <div className="flex flex-col min-h-[100dvh]">
           <header className="px-4 lg:px-6 h-14 flex items-center">
@@ -18,7 +46,7 @@ export default function Landing(){
                         onClick={()=>{navigate('/')}}
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnWXvVBvolRPYG33wGk1VkJCLks1ZFKnxEsBvPAipjky0luHFPZEISXnQyNkjy3HOP1g&usqp=CAU"
                         width="400"
-                      />              <span className="sr-only">Acme Inc</span>
+                      /><span className="sr-only">Acme Inc</span>
             </Link>
             <nav className="ml-auto flex gap-4 sm:gap-6">
               <Link className="text-sm font-medium hover:underline underline-offset-4" to="/dashboard">
@@ -85,8 +113,9 @@ export default function Landing(){
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cum in doloribus saepe eaque non. Fugit voluptatem, cumque iure mollitia odit laboriosam perspiciatis, earum inventore facilis harum, impedit labore provident.
                   </p>
                 </div>
-                <div className="mx-auto grid max-w-7xl items-start gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 xl:gap-6">
-                  <Card>
+                <div className="my-10 mx-20 grid max-w-8xl items-start gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 xl:gap-6">
+                  <CardRenderMain posts={posts} ></CardRenderMain>
+                  {/* <Card>
                     <div className="grid gap-2">
                       <img
                         alt="Cover image"
@@ -136,7 +165,7 @@ export default function Landing(){
                         </p>
                       </CardContent>
                     </div>
-                  </Card>
+                  </Card> */}
                 </div>
               </div>
             </section>

@@ -48,7 +48,7 @@ export default function Signup(){
               }} placeholder="m@example.com" label="Enter your email" />
             </div>
             <div className="space-y-2">
-              <Input onChange={(e)=>{
+              <Input type="password" onChange={(e)=>{
                 setuseratom((prevUser) => ({
                   ...prevUser,
                   password: e.target.value

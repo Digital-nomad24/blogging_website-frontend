@@ -41,7 +41,7 @@ export default function Signin(){
               }} placeholder="m@example.com" label="Enter your email" />
             </div>
             <div className="space-y-2">
-            <Input onChange={(e)=>{
+            <Input type="password" onChange={(e)=>{
                 setUser((prevUser) => ({
                   ...prevUser,
                   password: e.target.value

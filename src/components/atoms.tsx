@@ -7,6 +7,9 @@ export type createBlog = z.infer<typeof updatepost>
 type bug= z.infer<typeof createpost>
 export type Posts =  bug &{
     id:string
+    author?:{
+        name:string
+    }
 }
 export const useratom = atom({
     key:`${Math.random()}`,
