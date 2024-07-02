@@ -56,7 +56,7 @@ export default function Signup(){
               }} label="Enter your password"  placeholder="password" />
             </div>
             <Button label="Create an account" onClick={async ()=>{
-        let data = JSON.stringify({
+        let data= JSON.stringify({
           "email": `${user.email}`,
           "name": `${user.name}`,
           "password": `${user.password}`

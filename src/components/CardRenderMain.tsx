@@ -14,7 +14,15 @@ export function CardRenderMain({posts}:params) {
   return (
       <>
           {posts.map((post:Posts) => (
+
               <Card key={Math.random()}>
+                 <img
+                        alt="Cover image"
+                        className="mx-auto aspect-video overflow-hidden rounded-t-lg object-cover object-center"
+                        height="225"
+                        src="https://s.studiobinder.com/wp-content/uploads/2021/02/Juxtaposing-two-subjects.jpg"
+                        width="400"
+                      />
                   <CardHeader>
                       <h2 className="text-xl text-center ">{post.title}</h2>
                       <CardDescription>{post.content}</CardDescription>

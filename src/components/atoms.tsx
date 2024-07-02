@@ -2,7 +2,7 @@ import { atom } from 'recoil';
 import { signupbody,signinbody,createpost, updatepost} from '@naksh_2409/common';
 import {z} from "zod"
 type UserSignIn = z.infer<typeof signinbody>
-type UserSignUp = z.infer<typeof signupbody>
+export type UserSignUp = z.infer<typeof signupbody>
 export type createBlog = z.infer<typeof updatepost>
 type bug= z.infer<typeof createpost>
 export type Posts =  bug &{

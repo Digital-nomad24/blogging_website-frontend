@@ -115,41 +115,7 @@ console.log(error);
                 </div>
                 <div className="my-10 mx-20 grid max-w-8xl items-start gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 xl:gap-6">
                   <CardRenderMain posts={posts} ></CardRenderMain>
-                  {/* <Card>
-                    <div className="grid gap-2">
-                      <img
-                        alt="Cover image"
-                        className="mx-auto aspect-video overflow-hidden rounded-t-lg object-cover object-center"
-                        height="225"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM4WOvo4pTa48z54EIYWJMHLSWnMQKYqPUKmr2ae8YBw&s"
-                        width="400"
-                      />
-                      <CardContent >
-                        <h3 className="text-base font-bold">Introducing the Blog</h3>
-                        <p  className=" text-center text-sm text-gray-500 dark:text-gray-400">
-                          Learn what's behind the scenes of our blog and how you can start your own.
-                        </p>
-                      </CardContent>
-                    </div>
-                  </Card>
-                  <Card>
-                    <div className="grid gap-2">
-                      <img
-                        alt="Cover image"
-                        className="mx-auto aspect-video overflow-hidden rounded-t-lg object-cover object-center"
-                        height="225"
-                        src="https://s.studiobinder.com/wp-content/uploads/2021/02/Juxtaposing-two-subjects.jpg"
-                        width="400"
-                      />
-                      <CardContent >
-                        <h3 className="text-base font-bold">The Art of Web development by Nakshatra</h3>
-                        <p className="text-sm text-gray-500 dark:text-gray-400">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta, ex exercitationem quas natus tempore dolorem nihil quaerat voluptate corporis molestiae dolorum nemo quasi voluptatibus, cupiditate veritatis repellendus nesciunt. Vitae?
-                        </p>
-                      </CardContent>
-                    </div>
-                  </Card>
-                  <Card>
+                  {/*<Card>
                     <div className="grid gap-2">
                       <img
                         alt="Cover image"
