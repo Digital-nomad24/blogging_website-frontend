@@ -27,7 +27,7 @@ export function CardRender({posts}:params) {
               <Card key={Math.random()}>
                   <CardHeader>
                     
-                      <h2 className="text-xl ">{post.title}</h2>
+                      <h2 className="text-xl text-center ">{post.title}</h2>
                       <CardDescription>{post.content}</CardDescription>
                   </CardHeader>
                   <CardContent>

@@ -5,8 +5,8 @@ interface Cardprops{
 }
 export default function CardDescription ({ children}:Cardprops) {
     return (
-      <div className="bg-white rounded-lg shadow-md p-4">
-        <p className="text-gray-700">{children}</p>
+      <div className="bg-gray-100 rounded-lg shadow-md p-4">
+        <p className=" text-black">{children}</p>
       </div>
     );
   };

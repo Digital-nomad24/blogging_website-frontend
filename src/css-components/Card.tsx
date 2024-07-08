@@ -5,7 +5,7 @@ interface cardprops{
 }
 export function Card ({ children }:cardprops){
     return (
-      <div className="bg-white shadow-md rounded-md overflow-hidden">
+      <div className="bg-gray-100 shadow-md rounded-md overflow-hidden">
         {children}
       </div>
     );

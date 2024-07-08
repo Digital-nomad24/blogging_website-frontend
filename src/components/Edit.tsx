@@ -17,18 +17,19 @@ export default function Edit(){
     return  <div>
       <div className=" h-screen bg-gray-200 px-4 py-6 md:px-6 lg:py-12 xl:py-16">
       <div className="px-4 py-6 md:px-6 lg:py-12 xl:py-16">
-    <div className="grid md:grid-cols-2 md:gap-6">
       <div className="space-y-4">
-        <div className="space-y-2 text-center">
-          <h1 className="text-3xl font-bold tracking-tighter lg:text-5xl xl:leading-[4rem]">
+          <div className="space-y-2 text-center">
+            <h1 className="text-3xl font-bold tracking-tighter lg:text-5xl xl:leading-[4rem]">
            Update Your Blog
           </h1>
         </div>
         <div className="w-full max-w-[800px] mx-auto">
-          <div className="space-y-6">
-            <div className="space-y-2 text-center">
-              <h1 className="text-3xl font-bold"></h1>
-              <p className="text-gray-500 dark:text-gray-400">Enter the information to Update </p>
+            <div className="bg-white rounded-lg shadow-lg p-6 space-y-6">
+              <div className="space-y-2 text-center">
+                <h1 className="text-3xl font-bold">Sign In</h1>
+                <p className="text-gray-500 dark:text-gray-400">
+                  Enter your information to create an account
+                </p>
             </div>
             <div className="space-y-2">
             <Input onChange={(e)=>{
@@ -80,7 +81,7 @@ export default function Edit(){
     </div>
   </div>
   </div>
-  </div>}else {
+  }else {
     useEffect(()=>{
       navigate('/signin')
     })
