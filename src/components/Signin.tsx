@@ -91,7 +91,7 @@ export default function Signin(){
             </div>
           </div>
         </div>
-      <div className="invisible md:visible lg:visible bg-cover rounded-lg" style={{transition: 'background-image 2s ease-in-out', backgroundImage: `url(${images[randomImageIndex]})`, minHeight: '100vh' }}>
+      <div className="invisible md:visible lg:visible bg-cover rounded-lg bg-no-repeat relative" style={{transition: 'background-image 2s ease-in-out', backgroundImage: `url(${images[randomImageIndex]})`, minHeight: '100vh' }}>
   <div className="bg-black bg-opacity-50 absolute inset-0"></div>
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10 text-white ">
     <div className="space-y-4 text-center">
