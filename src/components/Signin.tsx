@@ -32,11 +32,6 @@ export default function Signin(){
       <div className=" px-4 py-6 md:px-6 lg:py-12 xl:py-16" style={{transition: 'background-image 2s ease-in-out', backgroundImage: `url(${images[randomImageIndex]})`, minHeight: '100vh' }}>
     <div className="grid md:grid-cols-2 md:gap-6">
     <div className="space-y-4">
-          <div className="space-y-2 text-center">
-            <h1 className="text-3xl font-bold tracking-tighter lg:text-5xl xl:leading-[4rem]">
-              Create An Account
-            </h1>
-          </div>
           <div className="w-full max-w-[800px] mx-auto">
             <div className="bg-white opacity-70 rounded-lg shadow-lg p-6 space-y-6">
               <div className="space-y-2 text-center">
@@ -96,7 +91,7 @@ export default function Signin(){
             </div>
           </div>
         </div>
-      <div className="invisible md:visible lg:visible bg-cover rounded-lg bg-no-repeat relative" style={{transition: 'background-image 2s ease-in-out', backgroundImage: `url(${images[randomImageIndex]})`, minHeight: '100vh' }}>
+      <div className="invisible md:visible lg:visible bg-cover rounded-lg" style={{transition: 'background-image 2s ease-in-out', backgroundImage: `url(${images[randomImageIndex]})`, minHeight: '100vh' }}>
   <div className="bg-black bg-opacity-50 absolute inset-0"></div>
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10 text-white ">
     <div className="space-y-4 text-center">
