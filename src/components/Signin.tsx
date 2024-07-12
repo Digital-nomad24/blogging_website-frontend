@@ -71,16 +71,14 @@ export default function Signin(){
           },
           data : data
         };
-        
-        axios.request(config)
-        .then((response) => {
-          localStorage.setItem('token',response.data.token)
-          settokenatom(response.data.token)
-        })
-        .catch((error) => {
+        try {
+          const response = await axios.request(config);
+          localStorage.setItem('token', response.data.token);
+          settokenatom(response.data.token);
+          navigate('/dashboard');
+        } catch (error) {
           console.log(error);
-        });
-        navigate('/dashboard')
+        }
       }}></Button>
       <div>
       <Button label={'Back to Home'} onClick={()=>{
