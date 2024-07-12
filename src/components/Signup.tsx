@@ -30,16 +30,11 @@ export default function Signup(){
     const [user,setuseratom]= useRecoilState(useratom)
     const settokenatom= useSetRecoilState(tokenatom)
     return  <div>
-      <div className="bg-gray-300 px-4 py-6 md:px-6 lg:py-12 xl:py-16">
+      <div className=" px-4 py-6 md:px-6 lg:py-12 xl:py-16" style={{transition: 'background-image 2s ease-in-out', backgroundImage: `url(${images[randomImageIndex]})`, minHeight: '100vh' }}>
       <div className="grid md:grid-cols-2 md:gap-6">
         <div className="space-y-4">
-          <div className="space-y-2 text-center">
-            <h1 className="text-3xl font-bold tracking-tighter lg:text-5xl xl:leading-[4rem]">
-              Create An Account
-            </h1>
-          </div>
           <div className="w-full max-w-[800px] mx-auto">
-            <div className="bg-white rounded-lg shadow-lg p-6 space-y-6">
+            <div className="bg-white opacity-70 rounded-lg shadow-lg p-6 space-y-6">
               <div className="space-y-2 text-center">
                 <h1 className="text-3xl font-bold">Sign Up</h1>
                 <p className="text-gray-500 dark:text-gray-400">
@@ -131,14 +126,14 @@ export default function Signup(){
             </div>
           </div>
         </div>
-  <div className="invisible md:visible lg:visible bg-cover  rounded-lg  bg-no-repeat relative" style={{transition: 'background-image 2s ease-in-out', backgroundImage: `url(${images[randomImageIndex]})`, minHeight: '100vh' }}>
+  <div className="invisible md:visible lg:visible bg-cover rounded-lg  "style={{transition: 'background-image 2s ease-in-out', backgroundImage: `url(${images[randomImageIndex]})`, minHeight: '100vh' }} >
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10 text-white ">
     <div className="space-y-4 text-center">
       <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight">
-        Welcome to Blogging
+        Welcome to Blog It
       </h2>
       <p className="text-lg md:text-xl">
-        At Blogging, we believe in the power of words to inspire, inform, and connect. Whether you're an avid reader, a passionate writer, or someone looking for a place to share your thoughts, you've come to the right place.
+        At Blog It, we believe in the power of words to inspire, inform, and connect. Whether you're an avid reader, a passionate writer, or someone looking for a place to share your thoughts, you've come to the right place.
       </p>
       <p className="text-lg md:text-xl">
         Our platform is a vibrant community where writers of all backgrounds and interests come together to create, share, and discover compelling content. From thought-provoking essays to captivating stories, from insightful analysis to practical advice, our blogosphere has something for everyone.
